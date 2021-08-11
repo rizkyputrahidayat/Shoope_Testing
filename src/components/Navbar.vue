@@ -4,19 +4,24 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items center">
                 <div class="d-flex align-items-center">
-                    <span class="mr-2">Jual</span>
+                    <router-link to="#" class="mr-2">Seller Centre</router-link>
                     <div class="hr1 mr-2"></div>
-                    <span class="mr-2">Download</span>
+                    <router-link to="#" class="mr-2">Mulai Jual</router-link>
                     <div class="hr1 mr-2"></div>
-                    <span class="mr-2">Ikuti kami di</span>
-                    <img class="icon-media mr-1" src="../assets/img/facebook-circle-logo-24.png" >
-                    <img class="icon-media mr-1" src="../assets/img/instagram-logo-24.png" >
-                    <img class="icon-media mr-1" src="../assets/img/twitter-logo-24.png" >
+                    <router-link to="#" class="mr-2">Download</router-link>
+                    <div class="hr1 mr-2"></div>
+                    <router-link to="#" class="mr-2">Ikuti kami di</router-link>
+                    <router-link to="#">
+                      <img class="icon-media mr-1" src="../assets/img/facebook-circle-logo-24.png" >
+                      <img class="icon-media mr-1" src="../assets/img/instagram-logo-24.png" >
+                      <img class="icon-media mr-1" src="../assets/img/twitter-logo-24.png" >
+                    </router-link>
                 </div>
                 <div class="d-flex align-items-center">
                     <img class="mr-1 icon-media" src="../assets/img/notification-regular-24.png" >
                     <span class="mr-3">Notifikasi</span>
                     <img class="mr-1 icon-media" src="../assets/img/help-circle-regular-24.png" >
+                    <span class="mr-3">Bantuan</span>
                     <router-link to="/Login" class="details-under">
                         <span class="mr-3">Login</span>
                     </router-link>
@@ -68,7 +73,7 @@
                     </div>
                 </div>
                 <router-link to="" type="button">
-                    <img src="../assets/img/cart-regular-24.png" class="icon-cart" alt="shop">
+                    <img src="../assets/img/cart-regular-24.png" class="icon-cart img-cart" alt="Cart Product">
                 </router-link>
             </div>
         </div>
@@ -89,8 +94,11 @@
   position: fixed;
   color: #f5f0ef;
   padding-top: 10px;
+  z-index: 99;
 }
-
+.mr-2{
+  color: #f5f0ef;
+}
 .hr1 {
   width: 2px;
   height: 15px;
@@ -100,15 +108,17 @@
 .img-shope {
   width: 190px;
 }
-
+.img-cart{
+  margin-left: 50px;
+}
 .wrap-search {
-  margin-left: -60px;
-  margin-top: 20px;
+  margin-left: 25px;
+  margin-top: 27px;
   position: relative;
-  width: 700px;
-  height: 50px;
+  width: 780px;
+  height: 45px;
   background-color: #f5f0ef;
-  border-radius: 12px;
+  border-radius: 5px;
 }
 .form-control {
   position: absolute;
@@ -123,8 +133,8 @@
   width: 20px;
 }
 .wrap-icon-s {
-  background: #f53d2d;
-  border-radius: 8px;
+  background: #FD6033;
+  border-radius: 4px;
   position: absolute;
   width: 80px;
   height: 87%;
@@ -142,21 +152,21 @@
   border-radius: 12px;
 }
 .icon-search {
-  width: 30px;
+  width: 28px;
   margin-left: 5px;
   margin-top: 7px;
 }
 .details-under {
-  color: white;
+  color: #f5f0ef;
 }
 .icon-cart {
-  width: 40px;
-  height: 40px;
-  margin-top: 30px;
+  width: 36px;
+  height: 36px;
+  margin-top: 35px;
   margin-right: 70px;
 }
 .under-input {
-  margin-left: -50px;
+  margin-left: 28px;
   font-size: 13px;
   font-weight: 100;
 }
